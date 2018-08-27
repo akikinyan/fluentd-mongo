@@ -8,6 +8,9 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev" \
  && sudo gem install \
         fluent-plugin-mongo \
         fluent-plugin-ignore-filter \
+        fluent-plugin-grep \
+        fluent-plugin-slack \
+        fluent-plugin-sns \
  && sudo gem sources --clear-all \
  && SUDO_FORCE_REMOVE=yes \
     apt-get purge -y --auto-remove \
