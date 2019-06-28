@@ -12,6 +12,7 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev" \
         fluent-plugin-slack \
         fluent-plugin-sns \
         fluent-plugin-rewrite-tag-filter \
+        fluent-plugin-kinesis \
  && sudo gem sources --clear-all \
  && SUDO_FORCE_REMOVE=yes \
     apt-get purge -y --auto-remove \
